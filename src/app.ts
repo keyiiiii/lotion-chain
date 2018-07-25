@@ -1,15 +1,15 @@
 import { httpPort } from './config';
 import lotion from 'lotion';
 
-let app = lotion({
+const app = lotion({
   initialState: {
-    count: 0
-  }
+    count: 0,
+  },
 });
 
-app.use(function (state, tx) {
-  if(state.count === tx.nonce) {
-    state.count++
+app.use(function(state, tx) {
+  if (state.count === tx.nonce) {
+    state.count++;
   }
 });
 
