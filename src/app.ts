@@ -22,7 +22,7 @@ const app = lotion({
 app.use(function(state, tx, chainInfo) {
   console.warn('state, tx, chainInfo', state, tx, chainInfo);
   // validate tx, mutate state if it's valid.
-  state.count++
+  state.count++;
 });
 
 app.listen(httpPort).then(({ GCI }) => {
