@@ -6,7 +6,7 @@ Thumbs.db
 npm-debug.log
 yarn-error.log
 node_modules/
-build/
+lotion-data/
 
 # Intellij project files
 .idea
